@@ -29,6 +29,7 @@ A precise PDF structure analyzer that extracts **document titles and structured 
 └── .gitignore                # Ignore intermediate files
 
 ```
+---
 
 ## 🔧 How to Run (Docker)
 1. Build Docker image
@@ -48,26 +49,31 @@ A precise PDF structure analyzer that extracts **document titles and structured 
 ✅ Make sure your .pdf files are in the input/ folder
 📝 JSON results will appear in the output/ folder
 
+---
 
 ## 🛠 Requirements
 - Python 3.9+ (or use Docker)
 
 - PyMuPDF (fitz)
 
+---
+
 ## 🧩 Custom Logic
 The tool includes tailored handling for:
 
-File	Special Handling
+   **File	Special Handling**
 
-file01	LTC form with fixed title, no headings
+- file01	- LTC form with fixed title, no headings
 
-file02	ISTQB-style with bold H1/H2 hierarchy
+- file02	- ISTQB-style with bold H1/H2 hierarchy
 
-file03	Ontario report with nested heading levels
+- file03	- Ontario report with nested heading levels
 
-file04	STEM flyer with single uppercase heading
+- file04	- STEM flyer with single uppercase heading
 
-file05	Event invite with "HOPE To SEE You THERE"
+- file05	- Event invite with "HOPE To SEE You THERE"
+
+---
 
 ## 📦 Future Ideas
 - Add support for PDF bookmarks
@@ -75,6 +81,8 @@ file05	Event invite with "HOPE To SEE You THERE"
 - Export as Markdown or HTML
 
 - Reintroduce Streamlit UI for live previews
+
+---
 
 ## 👤 Author
 Vibhaw Kumar Verma, Shahid Mansuri, Harshit Srivastava
