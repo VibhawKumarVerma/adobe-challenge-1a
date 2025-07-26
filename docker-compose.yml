@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  pdf-extractor:
+    build: .
+    volumes:
+      # Mount your local PDF directory to /app/input
+      - ./pdfs:/app/input
+      # Mount output directory to get results
+      - ./output:/app/output
+    environment:
+      - PYTHONUNBUFFERED=1
+    # Optional: override the default command
+    # command: ["python", "pdf_outline_extractor.py"]
