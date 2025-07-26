@@ -50,27 +50,33 @@ A precise PDF structure analyzer that extracts **document titles and structured 
 
 
 ## 🛠 Requirements
--- Python 3.9+ (or use Docker)
+- Python 3.9+ (or use Docker)
 
--- PyMuPDF (fitz)
+- PyMuPDF (fitz)
 
 ## 🧩 Custom Logic
 The tool includes tailored handling for:
 
 File	Special Handling
+
 file01	LTC form with fixed title, no headings
+
 file02	ISTQB-style with bold H1/H2 hierarchy
+
 file03	Ontario report with nested heading levels
+
 file04	STEM flyer with single uppercase heading
+
 file05	Event invite with "HOPE To SEE You THERE"
 
 ## 📦 Future Ideas
--- Add support for PDF bookmarks
+- Add support for PDF bookmarks
 
--- Export as Markdown or HTML
+- Export as Markdown or HTML
 
--- Reintroduce Streamlit UI for live previews
+- Reintroduce Streamlit UI for live previews
 
 ## 👤 Author
 Vibhaw Kumar Verma, Shahid Mansuri, Harshit Srivastava
+
 Built with ❤️ using PyMuPDF and Docker
