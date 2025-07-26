@@ -21,7 +21,7 @@ A precise PDF structure analyzer that extracts **document titles and structured 
 .
 ├── input/                    # Put your input PDFs here
 ├── output/                   # Output JSON files saved here
-├── pdf_outline_extractor.py # Main script (batch processing)
+├── pdf_outline_extractor.py  # Main script (batch processing)
 ├── Dockerfile                # Docker build config
 ├── docker-compose.yml        # (Optional) Multi-container support
 ├── requirements.txt          # Python dependency (PyMuPDF)
@@ -34,7 +34,8 @@ A precise PDF structure analyzer that extracts **document titles and structured 
 ## 🔧 How to Run (Docker)
 1. Build Docker image
    docker build -t pdf-extractor .
-2. Run the container
+   
+3. Run the container
    PowerShell (Windows):
     docker run --rm `
     -v "${PWD}\input:/app/input" `
@@ -46,7 +47,9 @@ A precise PDF structure analyzer that extracts **document titles and structured 
     -v "$(pwd)/input:/app/input" \
     -v "$(pwd)/output:/app/output" \
     pdf-extractor
+   
 ✅ Make sure your .pdf files are in the input/ folder
+
 📝 JSON results will appear in the output/ folder
 
 ---
