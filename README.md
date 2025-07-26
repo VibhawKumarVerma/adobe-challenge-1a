@@ -37,15 +37,23 @@ A precise PDF structure analyzer that extracts **document titles and structured 
    
 3. Run the container
    PowerShell (Windows):
+   
     docker run --rm `
+   
     -v "${PWD}\input:/app/input" `
+   
     -v "${PWD}\output:/app/output" `
+   
     pdf-extractor
 
    Linux/macOS (Bash):
+   
     docker run --rm \
+   
     -v "$(pwd)/input:/app/input" \
+   
     -v "$(pwd)/output:/app/output" \
+   
     pdf-extractor
    
 ✅ Make sure your .pdf files are in the input/ folder
